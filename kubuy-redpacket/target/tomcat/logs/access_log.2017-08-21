@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [21/Aug/2017:00:29:27 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8090-exec-1 131
+0:0:0:0:0:0:0:1 - - [21/Aug/2017:00:30:12 +0800] "GET /redpacket/creat/100/20 HTTP/1.1" 404 995 http-bio-8090-exec-2 32
+0:0:0:0:0:0:0:1 - - [21/Aug/2017:00:47:52 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8090-exec-3 193
+0:0:0:0:0:0:0:1 - - [21/Aug/2017:00:47:56 +0800] "GET /redpacket/have HTTP/1.1" 404 979 http-bio-8090-exec-4 13
+0:0:0:0:0:0:0:1 - - [21/Aug/2017:00:55:35 +0800] "GET /redPacket/creat/100/20 HTTP/1.1" 500 6289 http-bio-8090-exec-1 179673
+0:0:0:0:0:0:0:1 - - [21/Aug/2017:01:04:10 +0800] "GET /redPacket/creat/100/20 HTTP/1.1" 500 6289 http-bio-8090-exec-1 175164
+0:0:0:0:0:0:0:1 - - [21/Aug/2017:14:46:45 +0800] "GET / HTTP/1.1" 200 57 http-bio-8090-exec-1 57
+0:0:0:0:0:0:0:1 - - [21/Aug/2017:14:46:45 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8090-exec-2 13
+0:0:0:0:0:0:0:1 - - [21/Aug/2017:14:46:45 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8090-exec-4 1
+127.0.0.1 - - [21/Aug/2017:15:22:04 +0800] "GET /redpacket/creat/100/10 HTTP/1.0" 500 6289 http-bio-8090-exec-1 391
+127.0.0.1 - - [21/Aug/2017:15:22:04 +0800] "GET /favicon.ico HTTP/1.0" 404 973 http-bio-8090-exec-2 6
+127.0.0.1 - - [21/Aug/2017:15:22:04 +0800] "GET /favicon.ico HTTP/1.0" 404 973 http-bio-8090-exec-3 1
+127.0.0.1 - - [21/Aug/2017:15:25:55 +0800] "GET /redpacket/creat/100/10 HTTP/1.0" 500 12310 http-bio-8090-exec-1 88697
+127.0.0.1 - - [21/Aug/2017:15:32:09 +0800] "GET /redpacket/creat/100/10 HTTP/1.0" 500 6289 http-bio-8090-exec-1 113888
+127.0.0.1 - - [21/Aug/2017:19:43:34 +0800] "GET /redpacket/get.html HTTP/1.0" 404 987 http-bio-8090-exec-1 45
+127.0.0.1 - - [21/Aug/2017:19:44:05 +0800] "GET /redpacket/get.html HTTP/1.0" 404 987 http-bio-8090-exec-2 2
+127.0.0.1 - - [21/Aug/2017:19:44:08 +0800] "GET /redpacket/get.html HTTP/1.0" 404 987 http-bio-8090-exec-3 3

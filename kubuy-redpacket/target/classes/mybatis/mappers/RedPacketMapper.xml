@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kubuy.redpacket.mapper.RedPacketMapper">
+	<insert id="creatRedPacket">
+		insert into redpacket (id,total,num,balance,status,created,game_over)
+		values 
+		(null,#{total},#{num},#{balance},#{status},#{created},#{gameOver})
+	</insert>
+	
+	<update id="updateRedPacket">
+		update redpacket set balance=#{balance},status=#{status},#{gameover}
+	</update>
+	
+	<insert id="creatUseRedPacket">
+		insert into use_redpacket (use_id, money ) 
+		values
+		<foreach collection="useRedpacketList" item="useRedpacket" separator=",">
+			(#{useRedpacket.useId},#{useRedpacket.money}})
+		</foreach>
+	</insert>
+</mapper>

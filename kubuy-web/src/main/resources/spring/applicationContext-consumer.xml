@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="kubuy-web"/>
+	<dubbo:registry address="zookeeper://192.168.247.40:2181?backup=192.168.247.40:2182,192.168.247.40:2183" />
+    <dubbo:reference check="false" id="seckillDubboService" interface="com.kubuy.dubbo.service.SeckillDubboService" timeout="10000"/>
+	<dubbo:reference check="false" id="UserDubboService" interface="com.kubuy.dubbo.service.UserDubboService" timeout="10000"/>
+	<dubbo:reference check="false" id="cartDubboService" interface="com.kubuy.dubbo.service.CartDubboService" timeout="10000"/>
+	<dubbo:reference check="false" id="itemDubboService" interface="com.kubuy.dubbo.service.ItemDubboService" timeout="10000"/>
+	<dubbo:reference check="false" id="orderDubboService" interface="com.kubuy.dubbo.service.OrderDubboService" timeout="10000"/>
+</beans>
